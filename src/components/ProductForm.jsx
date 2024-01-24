@@ -30,17 +30,17 @@ const ProductForm = (props) => {
   }, [editProduct]);
 
   const updateProductName = (e) => {
-    setProductData({
-      ...productData,
+    setProductData((prevData) => ({
+      ...prevData,
       productName: e.target.value.trim(),
-    });
+    }));
   };
 
   const updateProductPrice = (value) => {
-    setProductData({
-      ...productData,
+    setProductData((prevData) => ({
+      ...prevData,
       price: value,
-    });
+    }));
   };
 
   const _deleteProduct = () => {
@@ -56,21 +56,16 @@ const ProductForm = (props) => {
       createProduct(productData);
     } else {
       updateProduct(productData);
+      window.location.reload();
     }
     setProductData(initialProductState);
     setIsVisible(false);
+    
   };
 
-  const dialogFooter = (
-    <div className="ui-dialog-buttonpane p-clearfix">
-      <Button label="Delete" icon="pi pi-times" onClick={_deleteProduct} />
-      <Button label="Save" icon="pi pi-check" onClick={saveProduct} />
-    </div>
-  );
-
   const clearSelected = () => {
-    setIsVisible(false);
     setProductData(initialProductState);
+    setIsVisible(false);
   };
 
   return (
@@ -82,7 +77,12 @@ const ProductForm = (props) => {
         contentStyle={{ overflow: "visible" }}
         header="Detalles del Producto"
         onHide={() => clearSelected()}
-        footer={dialogFooter}
+        footer={
+          <div className="ui-dialog-buttonpane p-clearfix">
+            <Button label="Delete" icon="pi pi-times" onClick={_deleteProduct} />
+            <Button label="Save" icon="pi pi-check" onClick={saveProduct} />
+          </div>
+        }
       >
         <div className="p-grid p-fluid">
           <br />

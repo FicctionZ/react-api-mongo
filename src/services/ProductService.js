@@ -18,6 +18,6 @@ export class ProductService {
     }
 
     delete(id){
-        return axios.delete(this.baseUrl+"products/"+id).then(res => res.data);
+        return axios.delete(this.baseUrl+"products/delete/"+id).then(res => res.data);
     }
 }
