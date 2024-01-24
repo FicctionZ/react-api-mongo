@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-api-mongo/static/css/main.ce6e49d5.css",
-    "main.js": "/react-api-mongo/static/js/main.01126969.js",
+    "main.js": "/react-api-mongo/static/js/main.710027e3.js",
     "static/js/787.f56cb3d3.chunk.js": "/react-api-mongo/static/js/787.f56cb3d3.chunk.js",
     "static/media/primeicons.svg": "/react-api-mongo/static/media/primeicons.e1441b135b3ca9ad643c.svg",
     "static/media/Inter-italic.var.woff2?v=3.19": "/react-api-mongo/static/media/Inter-italic.var.30807be7abc48ba8c73c.woff2",
@@ -12,11 +12,11 @@
     "static/media/primeicons.woff2": "/react-api-mongo/static/media/primeicons.78172950b335ccdb94e2.woff2",
     "index.html": "/react-api-mongo/index.html",
     "main.ce6e49d5.css.map": "/react-api-mongo/static/css/main.ce6e49d5.css.map",
-    "main.01126969.js.map": "/react-api-mongo/static/js/main.01126969.js.map",
+    "main.710027e3.js.map": "/react-api-mongo/static/js/main.710027e3.js.map",
     "787.f56cb3d3.chunk.js.map": "/react-api-mongo/static/js/787.f56cb3d3.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ce6e49d5.css",
-    "static/js/main.01126969.js"
+    "static/js/main.710027e3.js"
   ]
 }
