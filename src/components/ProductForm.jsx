@@ -56,7 +56,6 @@ const ProductForm = (props) => {
       createProduct(productData);
     } else {
       updateProduct(productData);
-      window.location.reload();
     }
     setProductData(initialProductState);
     setIsVisible(false);

@@ -36,8 +36,8 @@ const ProductContextProvider = (props) => {
     productService
       .update(product)
       .then((data) =>
-        setProducts(
-          products.map((p) => (p._id === product._id ? data : product))
+        setProducts((prevProducts) =>
+          prevProducts.map((p) => (p._id === product._id ? data : p))
         )
       );
 
