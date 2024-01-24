@@ -9,7 +9,7 @@ import { Calendar } from "primereact/calendar";
 const ProductForm = (props) => {
   const { isVisible, setIsVisible } = props;
 
-  const {
+  const { 
     createProduct,
     deleteProduct,
     editProduct,
